@@ -1,0 +1,29 @@
+{
+  "name": "toning",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "element-plus": "^2.5.3",
+    "fabric": "^5.3.0",
+    "lodash-es": "^4.17.21",
+    "scss": "^0.2.4",
+    "vue": "^3.4.31"
+  },
+  "devDependencies": {
+    "@types/fabric": "^5.3.10",
+    "@types/lodash-es": "^4.17.12",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "sass-embedded": "^1.85.1",
+    "typescript": "^5.2.2",
+    "unplugin-auto-import": "^19.1.1",
+    "unplugin-vue-components": "^28.4.1",
+    "vite": "^5.3.4",
+    "vue-tsc": "^2.0.24"
+  }
+}
