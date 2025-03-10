@@ -9,7 +9,7 @@ const { brightnessData, changeImgBrightness, convertImageToBase64 } =
   useToning();
 
 onMounted(() => {
-  convertImageToBase64(img).then((base64: string) => {
+  convertImageToBase64(img).then((base64: any) => {
     brightnessData.value.originalImg = base64;
   });
 });
@@ -55,7 +55,6 @@ const change = () => {
     <el-slider
       id="brightness"
       v-model="item.value"
-      :disabled="isSliderDisabled"
       show-input
       :min="item.key == 'blur' || item.key == 'opacity' ? 0 : -100"
       :max="100"
